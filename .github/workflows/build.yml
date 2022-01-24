@@ -8,6 +8,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: paradicms/gui-action@v1-beta
         with:
+          base_url_path: /ComputerScienceInventions
           debug: 1
           configuration_file_path: ./configuration.json
           input_data: .
