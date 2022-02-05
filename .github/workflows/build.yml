@@ -13,10 +13,10 @@ jobs:
           configuration_file_path: ./configuration.json
           input_data: .
           input_format: markdown
-          output_data: ./github/pages
+          output_data: ./.github/pages
           output_format: bootstrap-collection
       - uses: peaceiris/actions-gh-pages@v3
         with:
           # cname: bildungsroman.minorgordon.net
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./github/pages
+          publish_dir: ./.github/pages
