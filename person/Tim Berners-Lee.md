@@ -1,5 +1,0 @@
----
-relation:
-- <http://en.wikipedia.org/wiki/Tim_Berners-Lee>
-- <http://www.wikidata.org/entity/Q80>
----
