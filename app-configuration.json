@@ -1,8 +1,9 @@
 {
     "@context": {
-        "@vocab": "http://www.paradicms.org/ns/configuration"
+        "@vocab": "http://www.paradicms.org/ns/configuration#"
     },
     "@type": "AppConfiguration",
     "basePath": "/ComputerScienceInventions",
-    "stylesheet": "https://minorgordon.net/minorgordon.net.css"
+    "stylesheet": "https://minorgordon.net/minorgordon.net.css",
+    "title": "Computer Science Inventions"
 }
