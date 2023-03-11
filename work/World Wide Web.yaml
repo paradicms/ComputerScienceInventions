@@ -1,4 +1,4 @@
-creator: <md:person:Tim%20Berners-Lee>
+creator: md-person:Tim%20Berners-Lee
 relation:
-  - <http://www.wikidata.org/entity/Q466>
-  - <http://en.wikipedia.org/wiki/World_Wide_Web>
+  - http://www.wikidata.org/entity/Q466
+  - http://en.wikipedia.org/wiki/World_Wide_Web

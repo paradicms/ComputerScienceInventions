@@ -1,7 +1,7 @@
 ---
-creator: <md:person:Donald%20Knuth>
+creator: md-person:Donald%20Knuth
 date:
-    "rdf:type": <cms:DateTimeDescription>
+    "@type": cms:DateTimeDescription
     "time:day": 13
     "time:month": 5
     "time:year": 1977

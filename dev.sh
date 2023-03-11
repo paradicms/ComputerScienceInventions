@@ -4,10 +4,14 @@ set -e
 
 cd `dirname "$(readlink -f "$0")"`
 
-export PYTHONPATH=$PWD/etl:$PWD/gui/loader
-source $PWD/gui/loader/venv/bin/activate
+PROJECTS_DIR_PATH=$PWD/..
 
-OUTPUT_DATA=ComputerScienceInventions-gui
-OUTPUT_FORMAT=bootstrap-collection
+cd $PROJECTS_DIR_PATH/paradicms/lib/py/ssg
 
-python3 gui-action/action.py --debug 1 --dev --configuration-file-path ComputerScienceInventions/configuration.json --id ComputerScienceInventions --input-data ComputerScienceInventions --input-format markdown --output-data $OUTPUT_DATA --output-format $OUTPUT_FORMAT
+poetry run $PROJECTS_DIR_PATH/markdown-ssg-action/action.py \
+  --app work-search \
+  --app-configuration $PROJECTS_DIR_PATH/ComputerScienceInventions/app-configuration.json \
+  --dev \
+  --markdown-directory-path $PROJECTS_DIR_PATH/ComputerScienceInventions \
+  --pipeline-id ComputerScienceInventions
+
