@@ -1,7 +1,7 @@
 ---
-creator: <md:person:Charles%20Babbage>
+creator: md-person:Charles%20Babbage
 date:
-    "rdf:type": <cms:DateTimeDescription>
+    "rdf:type": cms:DateTimeDescription
     "time:day": 14
     "time:month": 6
     "time:year": 1822
