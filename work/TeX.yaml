@@ -1,4 +1,4 @@
-creator: <md:person:Donald%20Knuth>
+creator: md:person:Donald%20Knuth
 relation:
-  - <http://www.wikidata.org/entity/Q5301>
-  - <http://en.wikipedia.org/wiki/TeX>
+  - http://www.wikidata.org/entity/Q5301
+  - http://en.wikipedia.org/wiki/TeX

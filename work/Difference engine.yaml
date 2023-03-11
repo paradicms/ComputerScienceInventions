@@ -1,4 +1,4 @@
-creator: <md:person:Charles%20Babbage>
+creator: md:person:Charles%20Babbage
 relation:
-  - <http://www.wikidata.org/entity/Q628007>
-  - <http://en.wikipedia.org/wiki/Difference_engine>
+  - http://www.wikidata.org/entity/Q628007
+  - http://en.wikipedia.org/wiki/Difference_engine
