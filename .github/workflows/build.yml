@@ -1,22 +1,27 @@
-name: Build
+name: Build and deploy
 on: [push, workflow_dispatch]
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: paradicms/gui-action@v1-beta
+      - uses: actions/checkout@v3
+      - uses: paradicms/markdown-ssg-action@v1-beta
         with:
-          base_url_path: /ComputerScienceInventions
-          debug: 1
-          configuration_file_path: ./configuration.json
-          input_data: .
-          input_format: markdown
-          output_data: ./.github/pages
-          output_format: bootstrap-collection
-      - uses: peaceiris/actions-gh-pages@v3
-        with:
-          # cname: bildungsroman.minorgordon.net
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.github/pages
+          app: work-search
+          app_configuration: ./app-configuration.json
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v1
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v1
