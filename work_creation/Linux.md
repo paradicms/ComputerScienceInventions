@@ -1,7 +1,7 @@
 ---
 creator: md-person:Linus%20Torvalds
 date:
-    "rdf:type": cms:DateTimeDescription
+    "@type": cms:DateTimeDescription
     "time:day": 17
     "time:month": 9
     "time:year": 1991

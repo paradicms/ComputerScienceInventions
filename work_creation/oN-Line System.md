@@ -1,7 +1,7 @@
 ---
 creator: md-person:Douglas%20Engelbart
 date:
-    "rdf:type": cms:DateTimeDescription
+    "@type": cms:DateTimeDescription
     "time:day": 9
     "time:month": 12
     "time:year": 1968

@@ -1,7 +1,7 @@
 ---
 creator: md-person:Tim%20Berners-Lee
 date:
-    "rdf:type": cms:DateTimeDescription
+    "@type": cms:DateTimeDescription
     "time:day": 12
     "time:month": 11
     "time:year": 1990
