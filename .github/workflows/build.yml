@@ -9,7 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
+      - uses: actions/configure-pages@v3
+        id: configure_pages
       - uses: paradicms/markdown-ssg-action@v1-beta
+        env:
+          NEXT_BASE_PATH: ${{ steps.configure_pages.outputs.base_path }}
         with:
           app: work-search
           app_configuration: ./app-configuration.json
