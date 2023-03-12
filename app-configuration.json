@@ -1,7 +1,0 @@
-{
-    "@context": {
-        "@vocab": "http://www.paradicms.org/ns/configuration#"
-    },
-    "@type": "AppConfiguration",
-    "stylesheet": "https://minorgordon.net/minorgordon.net.css"
-}
