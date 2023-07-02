@@ -4,7 +4,7 @@ created:
   "time:day": 12
   "time:month": 11
   "time:year": 1990
-creator: md-person:Tim%20Berners-Lee
+creator: md-foaf-person:Tim%20Berners-Lee
 sameAs: http://www.wikidata.org/entity/Q466
 spatial:
   "wgs:lat": 46.2351752

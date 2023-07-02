@@ -4,7 +4,7 @@ created:
   "time:day": 17
   "time:month": 9
   "time:year": 1991
-creator: md-person:Linus%20Torvalds
+creator: md-foaf-person:Linus%20Torvalds
 sameAs: http://www.wikidata.org/entity/Q388
 spatial:
   "wgs:lat": 60.17272550060606

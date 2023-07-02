@@ -4,7 +4,7 @@ created:
   "time:day": 9
   "time:month": 12
   "time:year": 1968
-creator: md-person:Douglas%20Engelbart
+creator: md-foaf-person:Douglas%20Engelbart
 sameAs: http://en.wikipedia.org/wiki/NLS_(computer_system)
 spatial:
   "wgs:lat": 37.7781454

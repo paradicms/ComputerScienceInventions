@@ -4,7 +4,7 @@ created:
   "time:day": 14
   "time:month": 6
   "time:year": 1822
-creator: md-person:Charles%20Babbage
+creator: md-foaf-person:Charles%20Babbage
 sameAs: http://www.wikidata.org/entity/Q628007
 spatial:
   "wgs:lat": 51.5199005
