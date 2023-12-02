@@ -11,15 +11,15 @@ LOADED_DATA_DIR_PATH=$PROJECT_DIR_PATH/.paradicms/data
 
 cd $PROJECTS_DIR_PATH/paradicms/lib/py/ssg
 
-poetry run $PROJECTS_DIR_PATH/directory-etl-action/action.py \
+poetry run $PROJECTS_DIR_PATH/paradicms-directory-etl-action/action.py \
   --cache-directory-path $CACHE_DIR_PATH \
   --input-directory-path $PROJECT_DIR_PATH \
   --loaded-data-directory-path $LOADED_DATA_DIR_PATH \
   --pipeline-id ComputerScienceInventions \
   "$@"
 
-poetry run $PROJECTS_DIR_PATH/ssg-action/action.py \
+poetry run $PROJECTS_DIR_PATH/paradicms-ssg-action/action.py \
   --cache-directory-path $CACHE_DIR_PATH \
   --data-path $LOADED_DATA_DIR_PATH \
-  --dev \
+  --next-commands dev \
   --pipeline-id ComputerScienceInventions
